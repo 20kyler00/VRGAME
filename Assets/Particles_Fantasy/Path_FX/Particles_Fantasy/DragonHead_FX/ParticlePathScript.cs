@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ParticlePathScript : MonoBehaviour {
 
+	/*
 	public string pathName;
 	public float interval;
 	public AudioClip soundFX;
@@ -38,5 +39,5 @@ public class ParticlePathScript : MonoBehaviour {
 
 		iTween.MoveTo (gameObject, iTween.Hash ("path", iTweenPath.GetPath(pathName), "easetype", iTween.EaseType.easeInOutSine, "time", interval));
 	}
-
+	*/
 }

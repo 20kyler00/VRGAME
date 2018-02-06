@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyScript : MonoBehaviour {
-
+	/*
 	public int hits;
 	public AudioClip charging;
 	public GameObject leftHand;
@@ -89,4 +89,5 @@ public class EnemyScript : MonoBehaviour {
 		yield return new WaitForSeconds (waitTime);
 		anim.SetBool (stateToChange, cond);
 	}
+	*/
 }
