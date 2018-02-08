@@ -3297,6 +3297,7 @@ GameObject:
   - component: {fileID: 943102112}
   - component: {fileID: 943102116}
   - component: {fileID: 943102115}
+  - component: {fileID: 943102117}
   m_Layer: 0
   m_Name: Cube (27)
   m_TagString: Untagged
@@ -3401,6 +3402,18 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!114 &943102117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 943102110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f385d0faea38a4946a03f516de698f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneToLoad: grab test
 --- !u!1 &948387090
 GameObject:
   m_ObjectHideFlags: 0
