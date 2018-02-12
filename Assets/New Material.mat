@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Rocks 02 Mat
-  m_Shader: {fileID: 4800000, guid: 356bd8b9a05cf4d45a8b0672c7df04ca, type: 3}
-  m_ShaderKeywords: _NORMALMAP
+  m_Name: New Material
+  m_Shader: {fileID: 4800000, guid: fb50693d05abf5b43aaa04df4d7401ba, type: 3}
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,11 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 5b4faf9523ce61245a0b97be08f12983, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Cube:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 44819a5f03a6e944f859e94da2282e78, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -34,31 +30,31 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DetailNormalMAp:
+        m_Texture: {fileID: 2800000, guid: c08ccc0b4e392534fa96ff74a128c8ad, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _DistortTex:
-        m_Texture: {fileID: 2800000, guid: b1d7fee26e54cc3498f6267f072a45b9, type: 3}
+    - _ECA:
+        m_Texture: {fileID: 2800000, guid: 88a6b94c693638245a06848a1114d651, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _ExtraTex:
-        m_Texture: {fileID: 2800000, guid: c826d12aca5bdda4c900b00833f6d875, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Illum:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 0b43c294cf9c00649853938ea4d775e1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 636468f40348a3e4fb62fbc74a4c6d4f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -70,37 +66,40 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - DISTORTMAIN: 0
+    - _AOPower: 1
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
+    - _DetailNormalTile: 2
     - _DstBlend: 0
-    - _EmissionLM: 0
+    - _EdgePower: 1
+    - _FPOW: 5
     - _GlossMapScale: 1
+    - _GlossMax: 0.5
+    - _GlossMin: 0.4
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _MainScroll: -1.08
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Offset: 1
     - _Parallax: 0.02
-    - _Shininess: 0.08362178
+    - _R0: 0.05
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _TileValue: 1
     - _UVSec: 0
-    - _XDistort: 1
-    - _XSpeed: 1
-    - _YDistort: 1.936
-    - _YSpeed: 1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.6764706, g: 0.6764706, b: 0.6764706, a: 1}
-    - _ColorA: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorB: {r: 1, g: 1, b: 1, a: 1}
+    - _AOColor1: {r: 0.1397059, g: 0.09656142, b: 0.05341696, a: 1}
+    - _AOColor2: {r: 0.7720588, g: 0.7720588, b: 0.7720588, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EdgeColor: {r: 0.6838235, g: 0.6180009, b: 0.5631488, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
-    - _SpecColor: {r: 0.5294118, g: 0.5294118, b: 0.5294118, a: 1}
-    - _Tint: {r: 1, g: 1, b: 1, a: 1}
+    - _NormalMapIntensity: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
