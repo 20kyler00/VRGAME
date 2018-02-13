@@ -11,3 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/KYLER/grab test.unity
     guid: 6557edc1341460a4c914d9ecb0b9e477
+  - enabled: 1
+    path: Assets/KYLER/grab testa.unity
+    guid: 69045fe8dd54b154b94bcfd4505ab3f7
+  - enabled: 1
+    path: Assets/KYLER/ArenaTest 1.unity
+    guid: 7a6b22177fb1ff4438013b03b261c6ed
