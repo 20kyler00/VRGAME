@@ -64,12 +64,14 @@ public class ShieldsUp : MonoBehaviour {
             Debug.Log("Protecting");
             stance = false;
             moving = false;
+            GetComponent<Rigidbody>().velocity = new Vector3 (0, 0, 0);
 
         } else if (other.name == attack.name)
         {
             Debug.Log("Free to Attack");
-            stance = false;
+            stance = true;
             moving = false;
+            GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         }
     }
 }
