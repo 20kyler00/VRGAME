@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 135710518757765104}
   - component: {fileID: 23767557286161120}
   - component: {fileID: 54807965932635418}
+  - component: {fileID: 114331100368713960}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
@@ -164,7 +165,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 2.6
+  m_Time: 1
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -210,12 +211,23 @@ TrailRenderer:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 3
     numCornerVertices: 0
-    numCapVertices: 0
+    numCapVertices: 3
     alignment: 0
     textureMode: 1
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!114 &114331100368713960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1912134536422890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e828d26ee4384b458e90bd32b90d433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135710518757765104
 SphereCollider:
   m_ObjectHideFlags: 1
