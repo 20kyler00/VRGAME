@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33719829089503886}
   - component: {fileID: 135059878049526664}
   - component: {fileID: 23180734016051694}
-  - component: {fileID: 114255173039742610}
+  - component: {fileID: 114914360050612446}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 33180189846187108}
   - component: {fileID: 135645411292104120}
   - component: {fileID: 23414322869384294}
-  - component: {fileID: 114575187851587768}
+  - component: {fileID: 114956766118136742}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Untagged
@@ -779,25 +779,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114255173039742610
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1242515366116894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01528ba420202c64d86604973c101c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1901676374158612, guid: 718d2c78ac263b9419e1ecd780b8a8e2,
-    type: 2}
-  player: {fileID: 0}
-  bulletFrequency: 0.5
-  shootFrequency: 5.2
-  bulletAmount: 10
-  shootRange: 30
-  shootspeed: 10
 --- !u!114 &114341369488206286
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -826,25 +807,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
---- !u!114 &114575187851587768
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1438578294156894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01528ba420202c64d86604973c101c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1901676374158612, guid: 718d2c78ac263b9419e1ecd780b8a8e2,
-    type: 2}
-  player: {fileID: 0}
-  bulletFrequency: 0.5
-  shootFrequency: 5.2
-  bulletAmount: 10
-  shootRange: 30
-  shootspeed: 10
 --- !u!114 &114801822106019972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -861,6 +823,42 @@ MonoBehaviour:
   defending: 5
   attacking: 9
   moveSpeed: 5
+--- !u!114 &114914360050612446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242515366116894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d073aeda2dead814f90944d3e279f189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1901676374158612, guid: 718d2c78ac263b9419e1ecd780b8a8e2, type: 2}
+  player: {fileID: 0}
+  shootFrequency: 7
+  bulletFrequency: 0.3
+  bulletAmount: 10
+  shootRange: 30
+  shootspeed: 10
+--- !u!114 &114956766118136742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1438578294156894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d073aeda2dead814f90944d3e279f189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1901676374158612, guid: 718d2c78ac263b9419e1ecd780b8a8e2, type: 2}
+  player: {fileID: 0}
+  shootFrequency: 7
+  bulletFrequency: 0.3
+  bulletAmount: 10
+  shootRange: 30
+  shootspeed: 10
 --- !u!135 &135059878049526664
 SphereCollider:
   m_ObjectHideFlags: 1

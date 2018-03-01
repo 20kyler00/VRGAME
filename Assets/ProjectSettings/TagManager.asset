@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - TeleportIgnore
+  - Turret
   layers:
   - Default
   - TransparentFX
