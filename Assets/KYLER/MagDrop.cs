@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class throwing_Weapon : MonoBehaviour {
+public class MagDrop : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

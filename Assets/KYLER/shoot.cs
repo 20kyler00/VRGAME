@@ -38,6 +38,7 @@ public class shoot : MonoBehaviour {
             Vector3 shootingPosition = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
             GameObject MegaBullet = (GameObject)Instantiate(bullet, shootingPosition, Quaternion.identity);
             MegaBullet.GetComponent<Rigidbody>().velocity = gameObject.transform.forward * shootspeed;
+            GetComponentInChildren<magizine>().fired();
         }
 	}
 }
