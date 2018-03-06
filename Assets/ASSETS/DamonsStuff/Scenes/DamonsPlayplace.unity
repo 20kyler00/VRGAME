@@ -221,12 +221,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114914360050612446, guid: 1342f7aaa1d25ed4fb7f6376b102c0f2,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 742677591}
-    - target: {fileID: 114956766118136742, guid: 1342f7aaa1d25ed4fb7f6376b102c0f2,
+    - target: {fileID: 114341369488206286, guid: 1342f7aaa1d25ed4fb7f6376b102c0f2,
         type: 2}
       propertyPath: player
       value: 
@@ -236,7 +231,12 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 742677591}
-    - target: {fileID: 114341369488206286, guid: 1342f7aaa1d25ed4fb7f6376b102c0f2,
+    - target: {fileID: 114956766118136742, guid: 1342f7aaa1d25ed4fb7f6376b102c0f2,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 742677591}
+    - target: {fileID: 114914360050612446, guid: 1342f7aaa1d25ed4fb7f6376b102c0f2,
         type: 2}
       propertyPath: player
       value: 

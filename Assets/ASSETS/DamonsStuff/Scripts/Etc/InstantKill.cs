@@ -7,7 +7,10 @@ public class InstantKill : MonoBehaviour {
     public GameObject Billy;
 	// Use this for initialization
 	void Start () {
-		
+		if (killButton != null)
+        {
+            killButton = killButton.ToLower();
+        }
 	}
 	
 	// Update is called once per frame
