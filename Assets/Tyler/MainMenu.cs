@@ -23,6 +23,10 @@ public class MainMenu : MonoBehaviour
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 	}
 
+	public void ReturnMain ()
+	{
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex - 1);
+	}
 	public void Quit ()
 	{
 		Application.Quit ();
