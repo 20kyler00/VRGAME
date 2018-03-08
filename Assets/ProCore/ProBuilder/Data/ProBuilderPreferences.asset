@@ -19,22 +19,25 @@ MonoBehaviour:
   - pbDefaultSelectionMode
   - pb_GIWorkflowMode
   - pbHandleAlignment
+  - pbExtrudeMethod
   m_Float_keys:
   - pbEditorScroll.x
   - pbEditorScroll.y
   - pbBevelAmount
   - pb_MeshImporter::smoothingThreshold
+  - pbExtrudeDistance
   m_String_keys:
   - pbCurrentMaterialPalette
   m_Color_keys: []
   m_Material_keys: []
   m_Bool_values: 0101
-  m_Int_values: 01000000000000000100000000000000
+  m_Int_values: 0000000002000000010000000000000001000000
   m_Float_values:
   - 0
   - 0
   - 0.238581
   - 9.5
+  - -0.5
   m_String_values:
   - Assets/ProCore/ProBuilder/Data/Default Material Palette.asset
   m_Color_values: []

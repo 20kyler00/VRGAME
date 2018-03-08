@@ -8,6 +8,7 @@ public class MagCatch : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Gun")
         {
+
             gameObject.transform.SetParent(collision.gameObject.transform.parent.transform);
             gameObject.transform.position.Set(0.02336943f, 0.5343627f, -0.967316f);
         }

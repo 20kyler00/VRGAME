@@ -11,9 +11,12 @@ public class MagDrop : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(gameObject.transform.position.magnitude - gameObject.transform.parent.transform.position.magnitude >5)
+        if (!(gameObject.transform.parent == null))
         {
-            gameObject.transform.SetParent(null);
+            if (gameObject.transform.position.magnitude - gameObject.transform.parent.transform.position.magnitude > 5)
+            {
+                gameObject.transform.SetParent(null);
+            }
         }
 	}
 }
