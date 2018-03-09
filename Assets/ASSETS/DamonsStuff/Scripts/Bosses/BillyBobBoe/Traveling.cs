@@ -31,11 +31,19 @@ public class Traveling : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(!stillTurrets)
+        if(!stillTurrets && transform.position != target.transform.position)
         {
-            Vector3 position = target.transform.position;
-            Vector3 chaseDirection = new Vector3(position.x - transform.position.x, position.y - transform.position.y, position.z - transform.position.z);
-            GetComponent<Rigidbody>().velocity = chaseDirection * chaseSpeed;
+            Vector3 Position = target.transform.position;
+            Debug.Log(transform.position == Position);
+            /*Vector3 chaseDirection = new Vector3(position.x - transform.position.x, position.y - transform.position.y, position.z - transform.position.z);
+            GetComponent<Rigidbody>().velocity = chaseDirection * chaseSpeed;*/
+            transform.position = Vector3.Lerp(transform.position, Position, chaseSpeed * Time.deltaTime);
+            //Debug.Log("Moving to " + target.name);
+            Debug.Log(transform.position == Position);
+            if (transform.position == Position)
+            {
+                GetNewTarget();
+            }
         }
         //Debug.Log(turrets.Count);
     }
@@ -49,7 +57,7 @@ public class Traveling : MonoBehaviour {
             {
                 removingIt = turret;
                 turrets.Remove(removingIt);
-                Debug.Log(turrets.Count);
+                //Debug.Log(turrets.Count);
                 break;
             }
         }
@@ -59,21 +67,40 @@ public class Traveling : MonoBehaviour {
             for (int i = 0; i < myGuns.Count; i++)
             {
                 myGuns[i].GetComponent<Firing>().shootFrequency = fireAtWillSpeed;
-                
+                //Debug.Log("Empty");
             }
         }
     }
-    private void OnTriggerEnter(Collider other)
+    void GetNewTarget()
     {
-        if (other.tag == "Location")
+        int i = System.Array.IndexOf(locations, target) + 1;
+        if (i >= locations.Length)
+        {
+            target = locations[0];
+            Debug.Log("Foo");
+        }
+        else
+        {
+            target = locations[i];
+            Debug.Log("Doo");
+        }
+
+    }
+    private void OnCollisionEnter(Collision other)
+    {
+        Debug.Log(other.gameObject.name);
+        if (other.gameObject.tag == "Locations")
         {
             int i = System.Array.IndexOf(locations, target) + 1;
             if (i >= locations.Length)
             {
                 target = locations[0];
-            } else
+                Debug.Log("Foo");
+            }
+            else
             {
                 target = locations[i];
+                Debug.Log("Doo");
             }
         }
     }

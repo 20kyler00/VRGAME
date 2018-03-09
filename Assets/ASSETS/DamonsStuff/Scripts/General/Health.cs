@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour {
     public int health = 10;
-    public bool isPlayer = false;
+    public bool isSpecial = false;
+    public string specialType;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,7 +21,8 @@ public class Health : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Bullet")
         {
-
+            Ouch(1);
+            Destroy(collision.gameObject);
         }
     }
     void Ouch(int damage)
@@ -27,8 +30,22 @@ public class Health : MonoBehaviour {
         health -= damage;
         if (health <= 0)
         {
-            if (!isPlayer)
+            if (!isSpecial)
             {
+                Debug.Log("Poof");
+                Destroy(gameObject);
+            } else if (specialType == "Player")
+            {
+
+            } else if (specialType == "Turret")
+            {
+                GetComponent<InstantKill>().RemoveIt();
+                Destroy(gameObject);
+            } else if (specialType == "Arm")
+            {
+                GameObject.Find("BBHead").GetComponent<Health>().Ouch(100);
+                GameObject.Find("BBHead").GetComponentInChildren<Firing>().bulletFrequency = GameObject.Find("BBHead").GetComponentInChildren<Firing>().bulletFrequency / 2;
+                GameObject.Find("BBHead").GetComponentInChildren<Firing>().shootFrequency = GameObject.Find("BBHead").GetComponentInChildren<Firing>().shootFrequency / 2;
                 Destroy(gameObject);
             }
         }

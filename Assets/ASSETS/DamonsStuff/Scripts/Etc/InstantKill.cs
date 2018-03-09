@@ -19,7 +19,7 @@ public class InstantKill : MonoBehaviour {
         {
             if (Billy != null)
             {
-                Billy.GetComponent<Traveling>().RemoveTurret(gameObject);
+                RemoveIt();
                 Destroy(gameObject);
             } else
             {
@@ -27,4 +27,9 @@ public class InstantKill : MonoBehaviour {
             }
         }
 	}
+
+    public void RemoveIt()
+    {
+        Billy.GetComponent<Traveling>().RemoveTurret(gameObject);
+    }
 }

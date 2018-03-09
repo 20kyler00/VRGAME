@@ -6,6 +6,9 @@ TagManager:
   tags:
   - TeleportIgnore
   - Turret
+  - Guns
+  - Locations
+  - Bullet
   layers:
   - Default
   - TransparentFX

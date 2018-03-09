@@ -56,9 +56,10 @@ public class Bouncing : MonoBehaviour {
             timer = 0;
         }
         Vector3 position = target.transform.position;
-        Vector3 chaseDirection = new Vector3(position.x - transform.position.x, position.y - transform.position.y, position.z - transform.position.z);
-        GetComponent<Rigidbody>().velocity = chaseDirection * chaseSpeed;
-	}
+        /*Vector3 chaseDirection = new Vector3(position.x - transform.position.x, position.y - transform.position.y, position.z - transform.position.z);
+        GetComponent<Rigidbody>().velocity = chaseDirection * chaseSpeed;*/
+        transform.position = Vector3.Lerp(transform.position, position, chaseSpeed * Time.deltaTime);
+    }
 
     void NewTarget()
     {
