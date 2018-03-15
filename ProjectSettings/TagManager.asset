@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Bullet
   - Gun
+  - lid
   layers:
   - Default
   - TransparentFX
