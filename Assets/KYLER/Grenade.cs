@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Grenade : MonoBehaviour {
     public GameObject Lid;
+    
     public bool pinpulled = false;
     public float timer = 0;
     bool exploded = false;
@@ -11,9 +12,13 @@ public class Grenade : MonoBehaviour {
     public AudioSource Pin;
     public AudioSource Explosion;
     GameObject player;
+    private void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     private void Update()
     {
-        if (Lid.gameObject.transform.position.magnitude - gameObject.transform.position.magnitude > 5 && !pinpulled)
+        if (Lid.gameObject.transform.position.magnitude - gameObject.transform.position.magnitude > .1f && !pinpulled)
         {
             pinPulled();
         }

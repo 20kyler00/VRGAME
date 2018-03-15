@@ -10,6 +10,8 @@ public class lightChange : MonoBehaviour {
     public void LightChange()
     {
         light.transform.GetComponent<MeshRenderer>().material = material;
+        light.GetComponentInChildren<Light>().color = new Vector4(0, 255, 0, 1);
+        light.GetComponentInChildren<Light>().intensity = 3;
 
     }
 }
