@@ -17,5 +17,10 @@ public class PuzzleDoorOpen : MonoBehaviour {
         {
             gameObject.transform.position.Set(gameObject.transform.position.x, gameObject.transform.position.y + .1f, gameObject.transform.position.z);
         }
-	}
+        if (light_check_one.material == material)
+        {
+            Debug.Log("foo");
+        }
+
+    }
 }

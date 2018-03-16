@@ -12,11 +12,19 @@ public class Grenade : MonoBehaviour {
     public AudioSource Pin;
     public AudioSource Explosion;
     GameObject player;
+    public float radius = 5.0F;
+    public float power = 10.0F;
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
     }
-    private void Update()
+
+
+    void Start()
+    {
+        
+    }
+            private void Update()
     {
         if (Lid.gameObject.transform.position.magnitude - gameObject.transform.position.magnitude > .1f && !pinpulled)
         {
@@ -31,6 +39,21 @@ public class Grenade : MonoBehaviour {
             Explosion.Play();
             GetComponentInChildren<ParticleSystem>().Play();
             exploded = true;
+            gameObject.GetComponentInParent<Rigidbody>().AddExplosionForce(5, new Vector3(0, 0, 0), 8);
+            Debug.Log(gameObject.transform.position.magnitude - player.transform.position.magnitude);
+
+
+            Vector3 explosionPos = transform.position;
+            Collider[] colliders = Physics.OverlapSphere(explosionPos, radius);
+
+            foreach (Collider hit in colliders)
+            {
+                Rigidbody rb = hit.GetComponent<Rigidbody>();
+
+                if (rb != null)
+                    rb.AddExplosionForce(power, explosionPos, radius, 3.0F);
+                Debug.Log(colliders.Length + "collisions");
+            }
         }
     }
     public void pinPulled()
