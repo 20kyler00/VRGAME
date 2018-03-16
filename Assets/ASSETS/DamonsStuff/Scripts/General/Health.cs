@@ -21,8 +21,23 @@ public class Health : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            Ouch(1);
+            int damage = collision.gameObject.GetComponent<Damage>().damage;
+            Ouch(damage);
             Destroy(collision.gameObject);
+        }
+    }
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.tag == "Bullet")
+        {
+            int damage = hit.gameObject.GetComponent<Damage>().damage;
+            Ouch(damage);
+            Destroy(hit.gameObject);
+        } else if (hit.gameObject.tag == "Tank")
+        {
+            Debug.Log("Oof");
+            Ouch(1);
+            hit.gameObject.GetComponent<Charge>().Boop();
         }
     }
     void Ouch(int damage)

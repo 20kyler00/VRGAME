@@ -9,6 +9,7 @@ TagManager:
   - Guns
   - Locations
   - Bullet
+  - Tank
   layers:
   - Default
   - TransparentFX
