@@ -12,6 +12,7 @@ public class Charge : MonoBehaviour {
     private float stopRange;
 	// Use this for initialization
 	void Start () {
+        player = GameObject.FindGameObjectWithTag("Player");
         originalSpeed = GetComponent<Move>().moveSpeed;
         speed = originalSpeed * 4;
         stopRange = GetComponent<Move>().stopRange;

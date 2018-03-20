@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 11400010}
   - component: {fileID: 11462408}
   - component: {fileID: 11493974}
+  - component: {fileID: 114595986741639452}
   m_Layer: 0
   m_Name: OVRPlayerController
   m_TagString: Player
@@ -180,8 +181,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
-  m_LocalRotation: {x: -0, y: 0.74928695, z: -0, w: 0.6622455}
-  m_LocalPosition: {x: -2.31, y: 5.13, z: -9.6}
+  m_LocalRotation: {x: -0, y: -0.7302775, z: -0, w: 0.6831507}
+  m_LocalPosition: {x: -1.231, y: 4.5, z: -1.679}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -562,3 +563,17 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &114595986741639452
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d008f2a35890c61419c301d17624f9cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100000
+  isSpecial: 0
+  specialType: 

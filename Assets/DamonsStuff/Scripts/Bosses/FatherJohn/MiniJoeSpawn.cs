@@ -10,6 +10,7 @@ public class MiniJoeSpawn : MonoBehaviour {
     private List<GameObject> locations = new List<GameObject>();
 	// Use this for initialization
 	void Start () {
+        player = player = GameObject.FindGameObjectWithTag("Player");
         GameObject[] addThem = GameObject.FindGameObjectsWithTag("Locations");
         for (int i = 0; i < addThem.Length; i++)
         {

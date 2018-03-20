@@ -152,26 +152,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114471262335669430, guid: ec668938478aff64fb372956faa54e23,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
-    - target: {fileID: 114485828872550916, guid: ec668938478aff64fb372956faa54e23,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
-    - target: {fileID: 114287942504181336, guid: ec668938478aff64fb372956faa54e23,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
-    - target: {fileID: 114457006992369356, guid: ec668938478aff64fb372956faa54e23,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec668938478aff64fb372956faa54e23, type: 2}
   m_IsPrefabParent: 0
@@ -214,21 +194,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114358904170703640, guid: f2cbe765b8ee341448c5f51f13772ccb,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
-    - target: {fileID: 114733419213549492, guid: f2cbe765b8ee341448c5f51f13772ccb,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
-    - target: {fileID: 114918065292768556, guid: f2cbe765b8ee341448c5f51f13772ccb,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   m_IsPrefabParent: 0
@@ -336,46 +301,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114615348314947842, guid: 6dfa5e31d20e8a54d838a486836c4fb8,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
-    - target: {fileID: 114225858779364320, guid: 6dfa5e31d20e8a54d838a486836c4fb8,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
-    - target: {fileID: 114583489091898804, guid: 6dfa5e31d20e8a54d838a486836c4fb8,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
-    - target: {fileID: 114385180125739750, guid: 6dfa5e31d20e8a54d838a486836c4fb8,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
-    - target: {fileID: 114571424052971548, guid: 6dfa5e31d20e8a54d838a486836c4fb8,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
-    - target: {fileID: 114385952594388726, guid: 6dfa5e31d20e8a54d838a486836c4fb8,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
-    - target: {fileID: 114508413832585488, guid: 6dfa5e31d20e8a54d838a486836c4fb8,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
-    - target: {fileID: 114229342771969668, guid: 6dfa5e31d20e8a54d838a486836c4fb8,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1827787096}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6dfa5e31d20e8a54d838a486836c4fb8, type: 2}
   m_IsPrefabParent: 0
@@ -421,10 +346,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1827787096 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
-  m_PrefabInternal: {fileID: 1827787095}
 --- !u!1 &2063064589
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +378,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 224de5a1c3ba5f948af30bd7826e4666, type: 2}
+  - {fileID: 2100000, guid: a6dd0975ff09e1c44b81e964d14c5af0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
