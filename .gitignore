@@ -5,6 +5,10 @@
 [Bb]uilds/
 [Mm]odels/
 Assets/AssetStoreTools*
+[Oo]VR/
+[Oo]VRAudioManager/
+[Oo]vrAvatar/
+
 
 # Visual Studio 2015 cache directory
 .vs/
