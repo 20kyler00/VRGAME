@@ -1,120 +1,76 @@
 fileFormatVersion: 2
-guid: 04e85b01c8b313848a6a2a9c4cccf6b3
+guid: 4d6d87624a1d1a44494e90521dfef431
 timeCreated: 1444263923
 licenseType: Store
 PluginImporter:
-  externalObjects: {}
-  serializedVersion: 2
+  serializedVersion: 1
   iconMap: {}
   executionOrder: {}
   isPreloaded: 1
-  isOverridable: 0
   platformData:
-  - first:
-      '': OSXIntel
-    second:
-      enabled: 0
-      settings:
-        CPU: None
-  - first:
-      '': OSXIntel64
-    second:
-      enabled: 1
-      settings:
-        CPU: AnyCPU
-  - first:
-      '': SamsungTV
-    second:
-      enabled: 0
-      settings:
-        STV_MODEL: STANDARD_13
-  - first:
-      '': WP8
-    second:
+    Android:
       enabled: 0
       settings:
         CPU: AnyCPU
-        DontProcess: False
-        PlaceholderPath: 
-  - first:
-      Android: Android
-    second:
-      enabled: 0
-      settings:
-        CPU: AnyCPU
-  - first:
-      Any: 
-    second:
+    Any:
       enabled: 0
       settings: {}
-  - first:
-      Editor: Editor
-    second:
+    Editor:
       enabled: 1
       settings:
         CPU: x86_64
         DefaultValueInitialized: true
         OS: Windows
-  - first:
-      Facebook: Win
-    second:
+    Linux:
       enabled: 0
       settings:
         CPU: None
-  - first:
-      Facebook: Win64
-    second:
+    Linux64:
+      enabled: 1
+      settings:
+        CPU: x86_64
+    LinuxUniversal:
+      enabled: 0
+      settings:
+        CPU: x86_64
+    OSXIntel:
+      enabled: 0
+      settings:
+        CPU: None
+    OSXIntel64:
       enabled: 1
       settings:
         CPU: AnyCPU
-  - first:
-      Standalone: Linux
-    second:
+    OSXUniversal:
+      enabled: 0
+      settings:
+        CPU: x86_64
+    SamsungTV:
+      enabled: 0
+      settings:
+        STV_MODEL: STANDARD_13
+    WP8:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+        DontProcess: False
+        PlaceholderPath: 
+    Win:
       enabled: 0
       settings:
         CPU: None
-  - first:
-      Standalone: Linux64
-    second:
-      enabled: 1
-      settings:
-        CPU: x86_64
-  - first:
-      Standalone: LinuxUniversal
-    second:
-      enabled: 0
-      settings:
-        CPU: x86_64
-  - first:
-      Standalone: OSXUniversal
-    second:
-      enabled: 0
-      settings:
-        CPU: x86_64
-  - first:
-      Standalone: Win
-    second:
-      enabled: 0
-      settings:
-        CPU: None
-  - first:
-      Standalone: Win64
-    second:
+    Win64:
       enabled: 1
       settings:
         CPU: AnyCPU
-  - first:
-      Windows Store Apps: WindowsStoreApps
-    second:
+    WindowsStoreApps:
       enabled: 0
       settings:
         CPU: AnyCPU
         DontProcess: False
         PlaceholderPath: 
         SDK: AnySDK
-  - first:
-      iPhone: iOS
-    second:
+    iOS:
       enabled: 0
       settings:
         CompileFlags: 
