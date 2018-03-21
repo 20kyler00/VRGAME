@@ -8,12 +8,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/KYLER/Room.unity
     guid: 54445976c1dbf1c49bb38ba7eba558e8
-  - enabled: 1
-    path: Assets/KYLER/grab test.unity
-    guid: 6557edc1341460a4c914d9ecb0b9e477
-  - enabled: 1
-    path: Assets/KYLER/grab testa.unity
-    guid: 69045fe8dd54b154b94bcfd4505ab3f7
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/KYLER/ArenaTest 1.unity
     guid: 7a6b22177fb1ff4438013b03b261c6ed
+  - enabled: 1
+    path: Assets/DamonsStuff/Scenes/FinalScenes/JohnArena.unity
+    guid: 4418515b8b58a594981b3a8406d70e8f
+  - enabled: 1
+    path: Assets/DamonsStuff/Scenes/FinalScenes/JoeArena.unity
+    guid: 6ed9273a3cb5c9740903c6484f7d6bca
+  - enabled: 1
+    path: Assets/DamonsStuff/Scenes/FinalScenes/BobArena.unity
+    guid: d4f2125c7a97ebf488c600a03bbf98d0
+  - enabled: 1
+    path: Assets/DamonsStuff/Scenes/FinalScenes/BillArena.unity
+    guid: 83beac3c0e7de2a4bb32c5f940491b66
+  - enabled: 1
+    path: Assets/Tyler/Win.unity
+    guid: e13c83a6dce250d429c1ea82e1d464ac
+  - enabled: 1
+    path: Assets/Tyler/Lose.unity
+    guid: f451925e6b520834cb6b4af337ec6428

@@ -51,7 +51,7 @@ public class Health : MonoBehaviour {
                 Destroy(gameObject);
             } else if (specialType == "Player")
             {
-
+                SceneManager.LoadScene("Lose");
             } else if (specialType == "Turret")
             {
                 GetComponent<InstantKill>().RemoveIt();
@@ -62,6 +62,18 @@ public class Health : MonoBehaviour {
                 GameObject.Find("BBHead").GetComponentInChildren<Firing>().bulletFrequency = GameObject.Find("BBHead").GetComponentInChildren<Firing>().bulletFrequency / 2;
                 GameObject.Find("BBHead").GetComponentInChildren<Firing>().shootFrequency = GameObject.Find("BBHead").GetComponentInChildren<Firing>().shootFrequency / 2;
                 Destroy(gameObject);
+            } else if (specialType == "BB")
+            {
+                SceneManager.LoadScene("JoeArena");
+            } else if (specialType == "Joe")
+            {
+                SceneManager.LoadScene("BobArena");
+            } else if (specialType == "Bob")
+            {
+                SceneManager.LoadScene("JohnArena");
+            } else if (specialType == "John")
+            {
+                SceneManager.LoadScene("Win");
             }
         }
     }

@@ -7077,6 +7077,10 @@ Prefab:
       propertyPath: name
       value: Big Bill
       objectReference: {fileID: 0}
+    - target: {fileID: 1556602547092660, guid: 987ab3fa40fd1f1418b10aa602be8360, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 987ab3fa40fd1f1418b10aa602be8360, type: 2}
   m_IsPrefabParent: 0
@@ -7792,8 +7796,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 300
-  isSpecial: 0
-  specialType: 
+  isSpecial: 1
+  specialType: BB
 --- !u!64 &572091188
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17555,7 +17559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a3cd55546d04cf47b62bbc466050b0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1901676374158612, guid: 9b4a7c86865e1004ea7153a99a96e8c5, type: 2}
+  bullet: {fileID: 1912134536422890, guid: 93407422e12dc0246ae2e94e9f1134fd, type: 2}
   player: {fileID: 0}
   shootFrequency: 8
   bulletFrequency: 0.2

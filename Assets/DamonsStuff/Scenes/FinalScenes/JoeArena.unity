@@ -8160,6 +8160,21 @@ Prefab:
       propertyPath: locations.Array.data[15]
       value: 
       objectReference: {fileID: 930092860}
+    - target: {fileID: 114473405773369580, guid: 5cb1f1af6bab28a418e2f7edf7f6cd5c,
+        type: 2}
+      propertyPath: isSpecial
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114473405773369580, guid: 5cb1f1af6bab28a418e2f7edf7f6cd5c,
+        type: 2}
+      propertyPath: specialType
+      value: Joe
+      objectReference: {fileID: 0}
+    - target: {fileID: 114473405773369580, guid: 5cb1f1af6bab28a418e2f7edf7f6cd5c,
+        type: 2}
+      propertyPath: health
+      value: 250
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cb1f1af6bab28a418e2f7edf7f6cd5c, type: 2}
   m_IsPrefabParent: 0
@@ -16144,6 +16159,10 @@ Prefab:
         type: 2}
       propertyPath: name
       value: Little Joe
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556602547092660, guid: 987ab3fa40fd1f1418b10aa602be8360, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 987ab3fa40fd1f1418b10aa602be8360, type: 2}
