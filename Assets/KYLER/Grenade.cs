@@ -34,7 +34,7 @@ public class Grenade : MonoBehaviour {
         {
             timer += Time.deltaTime;
         }
-        if(timer >= 5&& !exploded)
+        if (timer >= 5 && !exploded)
         {
             Explosion.Play();
             GetComponentInChildren<ParticleSystem>().Play();
@@ -48,11 +48,16 @@ public class Grenade : MonoBehaviour {
 
             foreach (Collider hit in colliders)
             {
-                Rigidbody rb = hit.GetComponent<Rigidbody>();
+                if (hit.transform.tag == "Box"|| hit.transform.tag == "lid")
+                {
+                    Rigidbody rb = hit.GetComponent<Rigidbody>();
 
-                if (rb != null)
-                    rb.AddExplosionForce(power, explosionPos, radius, 3.0F);
-                Debug.Log(colliders.Length + "collisions");
+                    if (rb != null)
+                        rb.isKinematic = false;
+                    rb.useGravity = true;
+                    rb.AddExplosionForce(power, explosionPos, radius, 1.0F);
+                    Debug.Log(colliders.Length + "collisions");
+                }
             }
         }
     }

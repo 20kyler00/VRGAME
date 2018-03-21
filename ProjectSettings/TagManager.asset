@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Gun
   - lid
+  - Box
   layers:
   - Default
   - TransparentFX
