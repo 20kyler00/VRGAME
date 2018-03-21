@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 223213975785341880}
   - component: {fileID: 114392879522167414}
   - component: {fileID: 114594587110649912}
+  - component: {fileID: 114272581748425768}
   m_Layer: 5
   m_Name: Canvas - Game
   m_TagString: Untagged
@@ -206,6 +207,7 @@ GameObject:
   - component: {fileID: 224853809284475538}
   - component: {fileID: 222279220430527240}
   - component: {fileID: 114043555556488880}
+  - component: {fileID: 114635582323573490}
   m_Layer: 5
   m_Name: Text - Enemies Left (1)
   m_TagString: Untagged
@@ -321,6 +323,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114272581748425768
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780753287014424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdaadb6d8867885468379a4b1226df78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boss: {fileID: 0}
+  bossHealth: {fileID: 114222061258884776}
 --- !u!114 &114295203437969836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -418,6 +433,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114635582323573490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1907803725227640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e17d2a2bec5f2de4aa8a498062b3131f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
 --- !u!114 &114683236892205074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -478,7 +505,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1800394259135156}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -505,7 +532,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1556602547092660}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
