@@ -27,7 +27,7 @@ public class MegaCannon : MonoBehaviour {
         {
             lastPlayerPosition = new Vector3(playerPosition.x - transform.position.x, playerPosition.y - transform.position.y, playerPosition.z - transform.position.z);
             shootTimer = 0;
-            //Debug.Log("Pew");
+            Debug.Log("Pew");
             lastPlayerPosition.Normalize();
             //Debug.Log("x direction = " + lastPlayerPosition.x + " and y direction = " + lastPlayerPosition.y + " and z direction = " + lastPlayerPosition.z);
             playerPosition.x += lastPlayerPosition.x * shootRange;

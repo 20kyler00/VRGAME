@@ -29,7 +29,7 @@ public class FireAtWill : MonoBehaviour {
         if (shootTimer >= shootFrequency)
         {
             Vector3 shootDirection = transform.forward;//new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
-            shootDirection = new Vector3(shootDirection.x, shootDirection.y - 0.3f, shootDirection.z);
+            shootDirection = new Vector3(shootDirection.x, shootDirection.y - 0.5f, shootDirection.z);
             GameObject Bullet = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             Bullet.GetComponent<Rigidbody>().velocity = shootDirection * bulletSpeed;
             shootTimer = 0;
