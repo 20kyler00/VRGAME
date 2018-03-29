@@ -9,6 +9,8 @@ TagManager:
   - Gun
   - lid
   - Box
+  - Tank
+  - Locations
   layers:
   - Default
   - TransparentFX
