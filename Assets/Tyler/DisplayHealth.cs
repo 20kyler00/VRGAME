@@ -9,12 +9,14 @@ public class DisplayHealth : MonoBehaviour
 	int maxHealth;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		maxHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Health> ().getHealth();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		health = GameObject.FindGameObjectWithTag("Player").GetComponent<Health> ().getHealth();
 		gameObject.GetComponent<Text> ().text = "" + health + " / " + maxHealth;
 	}
