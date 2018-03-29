@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 224780956215190152}
   - component: {fileID: 222997075087069208}
   - component: {fileID: 114925757662761810}
+  - component: {fileID: 114051455292561956}
   m_Layer: 5
   m_Name: Text - Enemies Left
   m_TagString: Untagged
@@ -249,6 +250,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Boss Health
+--- !u!114 &114051455292561956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1556602547092660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a84167edcda18f645bc7d38fafde713a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114060092717237436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -287,7 +299,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b2099a7265ec8640aef25cad65bf0bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!114 &114222061258884776
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -14,6 +14,6 @@ public class EnemiesLeft : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		gameObject.GetComponent<Text> ().text = PlayerPrefs.GetInt ("EnemiesLeft");
+		gameObject.GetComponent<Text> ().text = "Enemies Left: " + PlayerPrefs.GetInt ("EnemiesLeft");
 	}
 }
