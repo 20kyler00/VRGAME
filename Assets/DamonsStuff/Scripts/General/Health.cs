@@ -74,6 +74,10 @@ public class Health : MonoBehaviour {
             } else if (specialType == "John")
             {
                 SceneManager.LoadScene("Win");
+            } else if (specialType == "Enemy")
+            {
+                PlayerPrefs.SetInt("EnemiesLeft", PlayerPrefs.GetInt("EnemiesLeft") - 1);
+                Destroy(gameObject);
             }
         }
     }

@@ -334,7 +334,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 15.03
+      value: 1.08
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalPosition.z
@@ -360,6 +360,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82061246741635378, guid: ce816f2e6abb0504092c23ed9b970dfd,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 024dc82a52227c94bb82525aa9b8f373, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
   m_IsPrefabParent: 0
@@ -413,7 +418,7 @@ MonoBehaviour:
     type: 2}
   TankPrefab: {fileID: 1700384568814638, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   MiniPrefab: {fileID: 1507796401395614, guid: 8347c9e834a229546b0114213ad60a9a, type: 2}
-  spawnTimer: 5
+  spawnTimer: 6
   timerVarience: 0.5
 --- !u!23 &114089932
 MeshRenderer:
@@ -620,7 +625,7 @@ MonoBehaviour:
     type: 2}
   TankPrefab: {fileID: 1700384568814638, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   MiniPrefab: {fileID: 1507796401395614, guid: 8347c9e834a229546b0114213ad60a9a, type: 2}
-  spawnTimer: 5
+  spawnTimer: 6
   timerVarience: 0.5
 --- !u!23 &247696325
 MeshRenderer:
@@ -1125,7 +1130,7 @@ MonoBehaviour:
     type: 2}
   TankPrefab: {fileID: 1700384568814638, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   MiniPrefab: {fileID: 1507796401395614, guid: 8347c9e834a229546b0114213ad60a9a, type: 2}
-  spawnTimer: 5
+  spawnTimer: 6
   timerVarience: 0.5
 --- !u!23 &480423547
 MeshRenderer:
@@ -1295,7 +1300,7 @@ MonoBehaviour:
     type: 2}
   TankPrefab: {fileID: 1700384568814638, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   MiniPrefab: {fileID: 1507796401395614, guid: 8347c9e834a229546b0114213ad60a9a, type: 2}
-  spawnTimer: 5
+  spawnTimer: 6
   timerVarience: 0.5
 --- !u!23 &537982088
 MeshRenderer:
@@ -1484,7 +1489,7 @@ MonoBehaviour:
     type: 2}
   TankPrefab: {fileID: 1700384568814638, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   MiniPrefab: {fileID: 1507796401395614, guid: 8347c9e834a229546b0114213ad60a9a, type: 2}
-  spawnTimer: 5
+  spawnTimer: 6
   timerVarience: 0.5
 --- !u!23 &549108493
 MeshRenderer:
@@ -1757,7 +1762,7 @@ MonoBehaviour:
     type: 2}
   TankPrefab: {fileID: 1700384568814638, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   MiniPrefab: {fileID: 1507796401395614, guid: 8347c9e834a229546b0114213ad60a9a, type: 2}
-  spawnTimer: 5
+  spawnTimer: 6
   timerVarience: 0.5
 --- !u!23 &670532068
 MeshRenderer:
@@ -1862,7 +1867,7 @@ MonoBehaviour:
     type: 2}
   TankPrefab: {fileID: 1700384568814638, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   MiniPrefab: {fileID: 1507796401395614, guid: 8347c9e834a229546b0114213ad60a9a, type: 2}
-  spawnTimer: 5
+  spawnTimer: 6
   timerVarience: 0.5
 --- !u!23 &692608701
 MeshRenderer:
@@ -2483,7 +2488,7 @@ MonoBehaviour:
     type: 2}
   TankPrefab: {fileID: 1700384568814638, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   MiniPrefab: {fileID: 1507796401395614, guid: 8347c9e834a229546b0114213ad60a9a, type: 2}
-  spawnTimer: 5
+  spawnTimer: 6
   timerVarience: 0.5
 --- !u!23 &1202011214
 MeshRenderer:
@@ -2974,7 +2979,7 @@ MonoBehaviour:
     type: 2}
   TankPrefab: {fileID: 1700384568814638, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   MiniPrefab: {fileID: 1507796401395614, guid: 8347c9e834a229546b0114213ad60a9a, type: 2}
-  spawnTimer: 5
+  spawnTimer: 6
   timerVarience: 0.5
 --- !u!23 &1765092034
 MeshRenderer:
@@ -3079,7 +3084,7 @@ MonoBehaviour:
     type: 2}
   TankPrefab: {fileID: 1700384568814638, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   MiniPrefab: {fileID: 1507796401395614, guid: 8347c9e834a229546b0114213ad60a9a, type: 2}
-  spawnTimer: 5
+  spawnTimer: 6
   timerVarience: 0.5
 --- !u!23 &1776869869
 MeshRenderer:
@@ -3345,7 +3350,7 @@ MonoBehaviour:
     type: 2}
   TankPrefab: {fileID: 1700384568814638, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   MiniPrefab: {fileID: 1507796401395614, guid: 8347c9e834a229546b0114213ad60a9a, type: 2}
-  spawnTimer: 5
+  spawnTimer: 6
   timerVarience: 0.5
 --- !u!23 &1867787030
 MeshRenderer:
@@ -3450,7 +3455,7 @@ MonoBehaviour:
     type: 2}
   TankPrefab: {fileID: 1700384568814638, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   MiniPrefab: {fileID: 1507796401395614, guid: 8347c9e834a229546b0114213ad60a9a, type: 2}
-  spawnTimer: 5
+  spawnTimer: 6
   timerVarience: 0.5
 --- !u!23 &1868632880
 MeshRenderer:
@@ -3555,7 +3560,7 @@ MonoBehaviour:
     type: 2}
   TankPrefab: {fileID: 1700384568814638, guid: f2cbe765b8ee341448c5f51f13772ccb, type: 2}
   MiniPrefab: {fileID: 1507796401395614, guid: 8347c9e834a229546b0114213ad60a9a, type: 2}
-  spawnTimer: 5
+  spawnTimer: 6
   timerVarience: 0.5
 --- !u!23 &1913364166
 MeshRenderer:
