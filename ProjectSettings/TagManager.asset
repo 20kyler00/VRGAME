@@ -11,6 +11,7 @@ TagManager:
   - Box
   - Tank
   - Locations
+  - Floor
   layers:
   - Default
   - TransparentFX

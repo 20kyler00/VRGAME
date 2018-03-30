@@ -8111,6 +8111,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 00321ef07e10bf747b4ddca2abe2fb01, type: 2}
+    - target: {fileID: 100000, guid: 81da694734002474b815865409b61ed6, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 81da694734002474b815865409b61ed6, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 81da694734002474b815865409b61ed6, type: 3}
@@ -11650,6 +11654,10 @@ Prefab:
     - target: {fileID: 100000, guid: 11dca8efe4ceb9e4aba603d211fbd076, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 11dca8efe4ceb9e4aba603d211fbd076, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11dca8efe4ceb9e4aba603d211fbd076, type: 3}
@@ -16401,6 +16409,7 @@ GameObject:
   - component: {fileID: 1335739581}
   - component: {fileID: 1335739580}
   - component: {fileID: 1335739579}
+  - component: {fileID: 1335739586}
   m_Layer: 0
   m_Name: cricket
   m_TagString: Gun
@@ -16528,6 +16537,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1335739586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1335739578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c4c41626c97734486e5ef292d9805e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1338398309 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4610955747215578, guid: 2b40c69ca2b96c54082c8279e3b391a9,
@@ -17103,6 +17123,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 82061246741635378, guid: ce816f2e6abb0504092c23ed9b970dfd,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e98d08085fc04d48b6b01ff95672c6d, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
   m_IsPrefabParent: 0
