@@ -15,4 +15,9 @@ public class magizine : MonoBehaviour {
     {
         bullets -= 1;
     }
+
+	void Update ()
+	{
+		PlayerPrefs.SetInt ("Bullets") = bullets;
+	}
 }
